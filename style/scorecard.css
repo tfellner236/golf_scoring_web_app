@@ -1,0 +1,11 @@
+#scorecard tr{
+	max-width: 80vw;
+}
+
+#scorecard tr td{
+	width: 8vw;
+}
+
+#scorecard tr td input{
+	width: 4vw;
+}
