@@ -1,9 +1,9 @@
 <?php
-session_start();
+//session_start();
 
-if(!isset($_SESSION['user'])) {
-    die('Bitte zuerst <a href="index.php">einloggen</a>');
-}
+//if(!isset($_SESSION['user'])) {
+    //die('Bitte zuerst <a href="index.php">einloggen</a>');
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,9 +15,9 @@ if(!isset($_SESSION['user'])) {
 
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-dark-grey" style="width:300px;" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-  <p id="user" class="w3-light-grey">&nbspUser: <?php echo($_SESSION['user']); ?></p>
+  <p id="user" class="w3-light-grey">&nbspUser: <?php //echo($_SESSION['user']); ?></p>
   <a href="menu.php" class="w3-bar-item w3-button w3-white">Main Page</a>
-  <a href="#" class="w3-bar-item w3-button w3-green">Play Round</a>
+  <button class="w3-bar-item w3-button w3-green" onclick="play_round()">Play Round</button>
   <a href="stats.php" class="w3-bar-item w3-button">Statistics</a>
   <a href="previous_rounds.php" class="w3-bar-item w3-button">Previous Rounds</a>
   <a href="#" class="w3-bar-item w3-button">Leaderboard</a>
@@ -49,6 +49,20 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
+</script>
+
+<script type="text/javascript">
+function play_round(){
+	
+if (screen.width <= 699) {
+	document.location = "mobile.html";
+}
+else{
+	document.location = "desktop.html";
+}
+
+}
+
 </script>
      
 </body>

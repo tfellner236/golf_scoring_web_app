@@ -1,0 +1,63 @@
+#course_selector, #hole_selector, #scorecard{
+	width: 100%;
+}
+
+#round_selectors{
+	width: 50%;
+	margin: 25px 0 25px 0;
+	background: #444444;
+	color: #ffffff;
+}
+
+#round_selectors td{
+	width: 20%;
+}
+
+#course_label, #hole_label{
+	text-transform: uppercase;
+}
+
+#scorecard td{
+	width: 8.34%;
+	text-align: center;
+}
+
+#scorecard td p{
+	margin: 0;
+}
+
+#scorecard td input{
+	width: 50%;
+	min-width: 40px;
+}
+
+#scorecard td select{
+	width: 50%;
+	min-width: 60px;
+}
+
+#hole_out{
+	background: #ffffff;
+	color: #444444;
+}
+
+#par_out{
+	background: #222222;
+	color: #ffffff;
+}
+
+#submit_button{
+	background: #ff9800;
+	font-weight: bold;
+	color: #ffffff;
+	cursor:pointer;
+}
+
+#submit_button:hover{
+	background: #ffffff;
+	color: #444444;
+}
+
+#submit_button:active{
+	background: #444444;
+}
